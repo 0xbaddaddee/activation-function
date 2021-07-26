@@ -9,7 +9,7 @@ def sigmoid(z):
 class Sigmoid:
 
     def __init__(self):
-        self.input_tensor = None  # keep track of the current input tensor to use in the backward pass
+        self.input_tensor = None
 
     def forward(self, input_tensor):
         self.input_tensor = input_tensor
