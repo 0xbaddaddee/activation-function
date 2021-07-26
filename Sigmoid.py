@@ -13,7 +13,7 @@ class Sigmoid:
 
     def forward(self, input_tensor):
         self.input_tensor = input_tensor
-        return sigmoid(input_tensor)
+        return sigmoid(input_tensor
 
     def backward(self, error_tensor):
         return sigmoid(self.input_tensor) * (1. - sigmoid(self.input_tensor)) * error_tensor
