@@ -16,4 +16,5 @@ class Sigmoid:
         return sigmoid(input_tensor)
 
     def backward(self, error_tensor):
-        return sigmoid(self.input_tensor) * (1. - sigmoid(self.input_tensor)) * error_tensor
+        z = sigmoid(self.input_tensor)
+        return z * (1. - z) * error_tensor
